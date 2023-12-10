@@ -8,8 +8,9 @@ It serves as a robust foundation for deploying machine learning models in a prod
 
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-  - [Setting Up](#setting-up)
-  - [Running](#running)
+- [Setting Up](#setting-up)
+- [Running](#running)
+- Testing](#Testing)
 
 ## Prerequisites
 
@@ -22,8 +23,9 @@ Step-by-step instructions for setting up and running your app.
 ### Setting Up
  ```
 git clone https://github.com/DimitrisParaskevopoulos/Docker-Flask-ML-Postgre-Sqlite.git
+ ```
+ ```
 cd your-local-path/Docker-Flask-ML-Postgre-Sqlite
-
  ```
 
 ### Running
