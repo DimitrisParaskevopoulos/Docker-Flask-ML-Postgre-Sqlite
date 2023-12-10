@@ -10,7 +10,8 @@ It serves as a robust foundation for deploying machine learning models in a prod
 - [Getting Started](#getting-started)
 - [Setting Up](#setting-up)
 - [Running](#running)
-- [Testing](#Testing)
+- [Testing PostgreSQL](#Testing PostgreSQL)
+- [Testing SQLite](#Testing SQLite)
 
 ## Prerequisites
 
