@@ -10,7 +10,7 @@ It serves as a robust foundation for deploying machine learning models in a prod
 - [Getting Started](#getting-started)
 - [Setting Up](#setting-up)
 - [Running](#running)
-- Testing](#Testing)
+- [Testing](#Testing)
 
 ## Prerequisites
 
@@ -31,19 +31,32 @@ cd your-local-path/Docker-Flask-ML-Postgre-Sqlite
 ### Running
  ```
 docker-compose -f docker-compose.prod.yml up -d --build
+ ```
+ ```
 docker-compose -f docker-compose.prod.yml exec web python manage.py create_db
  ```
 
-### Testing
+### Testing PostgreSQL
  ```
 http://localhost:1337/prediction_request
+
+ ```
+ ```
 curl --location 'http://localhost:1337/predict' \
 --header 'Content-Type: application/json' \
---data '[
-    {"Age": 85, "Sex": "male", "Embarked": "S"},
-    {"Age": 24, "Sex": "female", "Embarked": "C"},
-    {"Age": 3, "Sex": "male", "Embarked": "C"},
-    {"Age": 21, "Sex": "male", "Embarked": "S"}
-]
-'
+--data '[{"Age": 85, "Sex": "male", "Embarked": "S"}, {"Age": 24, "Sex": "female", "Embarked": "C"}, {"Age": 3, "Sex": "male", "Embarked": "C"}, {"Age": 21, "Sex": "male", "Embarked": "S"}]'
+ ```
+ ```
+http://localhost:1337/prediction_request
+
+ ```
+
+### Testing SQLite
+ ```
+docker-compose -f docker-compose.prod.yml exec web python manage.py create_db
+ ```
+ ```
+curl --location 'http://localhost:1337/predict' \
+--header 'Content-Type: application/json' \
+--data '[{"Age": 85, "Sex": "male", "Embarked": "S"}, {"Age": 24, "Sex": "female", "Embarked": "C"}, {"Age": 3, "Sex": "male", "Embarked": "C"}, {"Age": 21, "Sex": "male", "Embarked": "S"}]'
  ```
