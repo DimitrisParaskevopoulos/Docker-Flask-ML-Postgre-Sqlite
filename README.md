@@ -44,9 +44,9 @@ http://localhost:1337/prediction_request
 
  ```
  ```
-curl --location 'http://localhost:1337/predict' \
---header 'Content-Type: application/json' \
---data '[{"Age": 85, "Sex": "male", "Embarked": "S"}, {"Age": 24, "Sex": "female", "Embarked": "C"}, {"Age": 3, "Sex": "male", "Embarked": "C"}, {"Age": 21, "Sex": "male", "Embarked": "S"}]'
+curl --location "http://localhost:1337/predict" ^
+--header "Content-Type: application/json" ^
+--data "[{\"Age\": 85, \"Sex\": \"male\", \"Embarked\": \"S\"}, {\"Age\": 24, \"Sex\": \"female\", \"Embarked\": \"C\"}, {\"Age\": 3, \"Sex\": \"male\", \"Embarked\": \"C\"}, {\"Age\": 21, \"Sex\": \"male\", \"Embarked\": \"S\"}]"
  ```
  ```
 http://localhost:1337/prediction_request
@@ -55,6 +55,9 @@ http://localhost:1337/prediction_request
 
 ### Testing SQLite
  ```
+docker-compose -f docker-compose.yml up -d --build
+ ```
+ ```
 docker-compose -f docker-compose.yml exec web python manage.py create_db
  ```
  ```
@@ -62,9 +65,9 @@ http://localhost:1337/prediction_request
 
  ```
  ```
-curl --location 'http://localhost:1337/predict' \
---header 'Content-Type: application/json' \
---data '[{"Age": 85, "Sex": "male", "Embarked": "S"}, {"Age": 24, "Sex": "female", "Embarked": "C"}, {"Age": 3, "Sex": "male", "Embarked": "C"}]'
+curl --location "http://localhost:1337/predict" ^
+--header "Content-Type: application/json" ^
+--data "[{\"Age\": 85, \"Sex\": \"male\", \"Embarked\": \"S\"}, {\"Age\": 24, \"Sex\": \"female\", \"Embarked\": \"C\"}]"
  ```
  ```
 http://localhost:1337/prediction_request
