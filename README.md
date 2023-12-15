@@ -9,7 +9,7 @@ After obtaining predictions from the simple classification model, the app is con
 - 🌍 Production-ready foundation
 
 🤝 **Contribution:**
-Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements, especially for machine learning and MLops parts. Let's build this project together.
+Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements, especially for machine learning and MLOps parts. Let's build this project together.
 
 ## Table of Contents
 
