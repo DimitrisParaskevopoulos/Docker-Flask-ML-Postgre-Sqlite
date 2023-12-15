@@ -1,5 +1,6 @@
 🚀 **ML prediction Web App**
-The Flask application 🌐 is designed to provide predictions from a pre-trained machine learning model 🤖. After obtaining predictions from the simple classification model, the app is configured to save the results to a database. It supports two popular databases - PostgreSQL 🐘 and SQLite 📦. This app provides a flexible and modular structure, allowing developers to integrate their own pre-trained models and adapt the steps based on the specific requirements of their machine learning tasks. This app serves as a robust foundation for deploying machine learning models in a production environment 🚀.
+The Flask application 🌐 is designed to provide predictions from a pre-trained machine learning model 🤖, specifically designed to tackle the famous Titanic dataset 🚢. This dataset is widely recognized in the data science community, and involves predicting the survival of passengers aboard the Titanic based on the following features: age, sex, and embarkation point.
+After obtaining predictions from the simple classification model, the app is configured to save the results to a database. It supports two popular databases - PostgreSQL 🐘 and SQLite 📦. This app provides a flexible and modular structure, allowing developers to integrate their own pre-trained models and adapt the steps based on the specific requirements of their machine learning tasks. This app serves as a robust foundation for deploying machine learning models in a production environment 🚀.
 
 🌈 **Key Features:**
 - 🔄 Continuous predictions
